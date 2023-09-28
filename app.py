@@ -13,7 +13,7 @@ with st.sidebar:
     else:
         replicate_api = st.text_input("Enter Replicate API token:", type='password')
         if not (replicate_api.startswith('r8') and len(replicate_api)==40):
-            st.warnings('Please enter your credentials!', icon='⚠️')
+            st.warning('Please enter your credentials!', icon='⚠️')
         else:
             st.success('Proceed to entering your prompt message!', icon='👉')
     
